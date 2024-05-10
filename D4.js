@@ -12,16 +12,20 @@ function area(l1,l2) {
  la loro somma moltiplicata per tre.
 */
 
-function crazySum(n1,n2) {
-    return n1 + n2
+// function crazySum(n1,n2) {
+//     return n1 + n2
 
-}if (crazySum===30) {
-    console.log("la somma dei numeri è:", crazySum(10, 20))
+// }if (crazySum===30) {
+//     console.log("la somma dei numeri è:", crazySum(10, 20))
 
-}else {
-    console.log("la moltiplicazione è:", crazySum(10, 20)*(3))
-
-}
+// }else {
+//     console.log("la moltiplicazione è:", crazySum(10, 20)*(3))
+// }
+ function area(l1, l2) {
+    return l1 * l2;
+    }
+    const areaRettangolo = area(5, 6);
+    console.log("l'area del rettangolo è:" + areaRettangolo);
 
 /* ESERCIZIO 3
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
@@ -65,30 +69,27 @@ function boundary(n) {
  ritornare la stringa originale senza alterarla.
 */
 
-// function epify(stringa) {
-
-//     if (stringa.starsWith("EPICODE")) {
-//         return stringa;
-//     } else {
-//         return "EPICODE"+ stringa;
-//     }
-    
-// }
-
-// console.log("la stringa e", stringa)
+function epify(stringa) {
+    if (stringa.startsWith("EPICODE")) {
+        return stringa;
+    } else {
+        return "EPICODE" + stringa;
+    }    
+}
+console.log(epify("eddy"));
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
 */
 
-// function check3and7(numeroPositivo) {
-//     if (numeroPositivo % 3 || 7) {
-//         return numeroPositivo;
-//     } else {
-//         return undefined
-//     }
-// } console.log(numeroPositivo)
+function check3and7(numeroPositivo) {
+    if (numeroPositivo % 3 || 7) {
+        return numeroPositivo;
+    } else {
+        return undefined
+    }
+} console.log(numeroPositivo)
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
